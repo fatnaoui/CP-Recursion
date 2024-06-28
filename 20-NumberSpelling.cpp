@@ -13,6 +13,10 @@ void NTS(string *a,int n){
     cout<<a[digit]<<' ';
 }
 
+// if you swap these two lines -int digit = n % 10;
+//                             -cout<<a[digit]<<' ';
+// we will notice that order has been changed
+
 int main() {
     string arr[] = {"zero","one","two","three","foor","five","six","seven","eight","nine","ten"};
     int n;
