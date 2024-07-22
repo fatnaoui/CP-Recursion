@@ -1,6 +1,6 @@
 ## Tower Of Hanoi 
 -------------------
-![Taower Of Hanoi](./images/TowerOfHanoi.png)
+![Tower Of Hanoi](./images/TowerOfHanoi.png)
 
 Task:
 
