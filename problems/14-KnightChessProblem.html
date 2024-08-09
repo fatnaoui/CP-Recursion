@@ -1,0 +1,26 @@
+Problem Name: Funky Chess Board <br></br>
+Problem Constraints: The maximum dimensions of the board will be 10 rows and 10 columns. That is, any modified chessboard specified by the input will fit completely on a 10 row, 10 column board. <br></br>
+
+Problem Description: <br></br>
+A knight is a piece used in the game of chess. The chessboard itself is square array of cells. Each time a knight moves, its resulting position is two rows and one column, or two columns and one row away from its starting position. Thus a knight starting on row r, column c – which we’ll denote as (r,c) – can move to any of the squares (r-2,c-1), (r-2,c+1), (r-1,c-2), (r-1,c+2), (r+1,c-2), (r+1,c+2), (r+2,c-1), or (r+2,c+1). Of course, the knight may not move to any square that is not on the board.  <br></br>
+
+
+Suppose the chessboard is not square, but instead has rows with variable numbers of columns, and with each row offset zero or more columns to the right of the row above it. The figure to the left illustrates one possible configuration. How many of the squares in such a modified chessboard can a knight, starting in the upper left square (marked with	an asterisk), not reach in any number of moves without resting in any square more than once? Minimize this number.  <br></br>
+
+<img src='https://i.imgur.com/05Pl2xt.png'>
+
+<br></br>
+If necessary, the knight is permitted to pass over regions that are outside the borders of the modified chessboard, but as usual, it can only move to squares that are within the borders of the board. <br></br>
+
+
+Input Format: First line contains an integer <b><i>n</i></b>, representing the side of square of chess board.<br></br>
+The next <b><i>n</i></b> line contains <b><i>n</i></b> integers separated by single spaces in which j<sub>jth</sub> integer is 1 if that cell(i,j) is part of chessboard and 0 otherwise.<br></br>
+Sample Input: 3<br></br>
+1 1 1    <br></br>
+1 1 1    <br></br>
+1 1 1    <br></br>
+Output Format: Print the minimum number of squares that the knight can not reach.<br></br>
+Sample Output: 1
+
+
+
