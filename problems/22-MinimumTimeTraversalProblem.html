@@ -1,0 +1,51 @@
+Problem Name: Minimum Time Traversal   <br>
+Problem Constraints: 1 <= T <= 30     <br>
+0 <= n <= 5           <br>
+1 <=  x,y <= 2000             <br>
+Problem Description:            <br>
+**Distance:** The distance between two points in a grid based on a strictly horizontal and/or vertical path (i.e along the grid lines), as opposed to the **Manhattan Distance** or **Diagonal Distance**.<br><br>
+
+
+
+
+
+The **Manhattan Distance** is the simple sum of the horizontal and vertical components, where as the **Diagonal Distance** might be computed by applying the **Pythagorean Theorem**. <br>
+
+<img src='https://i.imgur.com/eKqHXbY.png?1'> 
+<br>
+**Problem Statements:** A robot is moving on co-ordinate axis. Time taken to move from one point to another point is equal to the Manhattan Distance.<br>
+
+Ex. Time taken to move from point ( x<sub>1</sub> , y<sub>1</sub>) to ( x<sub>2</sub> , y<sub>2</sub>) is |x<sub>1</sub> - x<sub>2</sub>| + |y<sub>1</sub> - y<sub>2</sub>| where | a | is equal to modulus function of a.<br>
+
+Starting Point (S) and Ending Point (E) of the robot is fixed. There are n wormhole like pipelines also on the coordinate axis. Time taken to move from one point to another point of each pipeline is given.<br>
+
+<img src='https://i.imgur.com/1Bhzp2b.png?1'>
+<br>
+Robot can use those pipelines to move from statring point to ending point. Can you help to find the minimum time required during traversal.<br>
+
+Input Format: The first line contains T, the number of test cases.<br>
+
+The description of T test cases follows.<br>
+
+The first line of each test case contains integer n which represents the number of pipelines.<br>
+
+The next line contains four space seperated integer. The first two integer is the x and y coordinate
+of starting point and last two integer is the x and y coordinate of the ending points.<br>
+The next n lines contains 5 space-separated character x<sub>1</sub> , y<sub>1</sub>, x<sub>2</sub> , y<sub>2</sub>, t . The first four integers
+are the x and y co-ordinate of terminal of the pipelines and 5 th integer is time to cross that
+pipelines .<br>
+Sample Input: 3            <br>
+0                 <br>
+20 20 100 100                  <br>
+1              <br>
+20 20 100 100                 <br>
+25 25 30 30 5              <br>
+3               <br>
+20 20 100 100             <br>
+35 35 50 50 0             <br>
+30 30 25 25 0                <br>
+40 40 60 60 100              <br>
+Output Format: For each test case you have to print the output in this format (#Test Case Number : minimum time taken by robot to traverse from begining to ending point.)<br>
+Sample Output: #1 : 160          <br>
+#2 : 155                      <br>
+#3 : 120              <br>
